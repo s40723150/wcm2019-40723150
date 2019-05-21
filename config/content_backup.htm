@@ -1171,9 +1171,25 @@ doc['button'].bind('click',setgearnumber)
 <ul>
 <li>原因：無法正確讀取到 brython</li>
 </ul>
+<hr/>
 <p>解決方式二：</p>
 <ol>
-<li>先執行<img alt="" height="20" src="blob:https://127.0.0.1:9443/973b84e7-5ef4-4163-9e29-d2b6a7d15590" width="107"/></li>
+<ul>
+<li>先在有問題的頁面下按<span> </span><span style="background-color: #ff99cc;">F12</span> 來檢查頁面問題</li>
+<li>若有出現</li>
+</ul>
+</ol>
+<p>            <img caption="false" height="161" src="/images/chrome_2019-05-07_17-25-09.png" width="450"/></p>
+<ol>
+<li>到倉儲下的 static 資料夾裡檢查是否有<br/><img alt="" height="43" src="/images/brython.png" width="125"/></li>
+</ol>
+<ul>
+<li>原因：沒有 brython 的檔案因此<span>無法讀取到 brython</span></li>
+</ul>
+<hr/>
+<p>解決方法三<span>：</span></p>
+<ol>
+<li>在Y槽 python  launchLeo.py<br/>用 python 執行<img alt="" height="20" src="blob:https://127.0.0.1:9443/973b84e7-5ef4-4163-9e29-d2b6a7d15590" width="107"/><img alt="" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGsAAAAUCAYAAACKy8MYAAAEXElEQVRoQ+2ZW2gcZRTHf3tp1jZaUiF0FROVJuhqiUhDk6YPihCwQcSuFNOUIlRIHqpELHkRTbF4eVgqWaiX7IMg1hYjpEVaIz60VVhptEobaoMmtImFRk1IN7S57OxlZG6b2d3Z2S+4W1m7A/sy3zfnfOf8zvmfGdbRf0GWN62nfJVABhxlWCVAST+iLaz+NzttI3l6117uf/ix0om2xE+aF1YwGLQMcXBwENm9mjXeDWVgt6gIhGANDw+nHaepqQkFlt/v58vjJ1lb46Om/tEcRx7iXe9xnvizn623KCjNzX/lt3hBCsGycq/AMq5ZyU1L2wslBGuco8+8CIfC7HygeMkttGUhWJmdtWnzFq7PS3hWOalas4rQ58fKsApNxsKeECzzc+HLc3wzMsXFyWliUpQN1ZX4faup9m0pd1aRgQnBMnfWGPcxenWWkYlp4lJUBRZob8Bzr+DMmgiyp/lVRvTA/EdkXn8KUO6/DG+d6KZGXTNLlT5/jkB3R0hdbTgwxieddboVZb0NQ5i1tTFtVlo+YyeDVras/UAnQctZbNh/gyvNy+fSYlXsv82DZ80SLDZfhWCpqZuJcuL8NeYXoyxGo0RuLPDbH38TkyS+7/XicUaYlP3MLLkz6iv9IOFQkNpOHYgK7hIvKQHnhdXG4O6vORfYpoFtHqBVDVhLLgb0lHc96ZbP5IKVmbTMgsnwc6qLxg4sgCnP1XPwnAmmKdba0Fb28+lysZ3qYs94j6n4rFtUCJbSWV9M3sXkXxGtm2KS2lFxSSIRkxjeL+GM/U68cgcXFlpsYWmJXu6sVHXmhWV+ozQl8XIXjUPPaRDTLrvE54ClJl/rXPOldmpdwMJPLujW98M9Dr7bZnSXEY/4y44QLOXgOz44ixRdosKRpH1zBR5XDDmZ4PHaOPWVpyExD3e28rPUnjtp5k5Sd5kSmgXLLBc2iS80LEvwgAIya20lsLRuu/KaJvtXje6yLIJ/2Vkfnk8yE7nJR7ucPLT2jG5NhviC9kssIK/r4Bdpe25YGQErB97eu1GXkQwtV6v8IvtSUpejs7JkcIijoXp2GjMrNVPMibWTwXSpC/d0QUD5RrSQW+WM7z/CsdScNULXZdCny7ZyO1My9eJs9Q3AXrFPCOHOOhye4LPTv/LVK0mqHD9CMqYCMkAhu5hbf4jxBa+NHBlarm1pONBHXe+l1AezBu8HbXF3H/tGB/RvITtJ019OUtJqzIl8MqjMFNNRG/u0pGfItN2LDMYzKRhGcenF8OxGDvYaspr9MqLIYveo7te6mdLuCsNyOp24XC7ciyfhxreQSID7HkhKTFW9Q1KG6UVIJAW8/u+3iM2h5RkmlpC8sDLNfBx4HmfksNZRrmpwrWPq7ve4dlPM4e2xSwBW1ozOn5kV/0VS5ZGpcf5ERWwcWXYyd8eTzCa8XF/K7+z22WEHyxgFLfo8Fs/KimGJmy7vLHQGyrAKndEi2ivDKmJyC236H3MaQCpD+AnFAAAAAElFTkSuQmCC" width="107"/></li>
 <li>開啟 CMSimfly.leo</li>
 <li>找到<span style="background-color: #ffff99;">編輯flaskapp.py</span> 底下的 <span style="background-color: #ffff99;">savePage</span> 和 <span style="background-color: #ffff99;">ssavePage</span>，找到
 <pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false"> page_content = request.form['page_content']
@@ -1189,7 +1205,7 @@ doc['button'].bind('click',setgearnumber)
 </ul>
 <p><img caption="false" height="465" src="/images/chrome_2019-05-07_17-29-32.png" width="500"/></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/cmzXKrmXCfo" width="560"></iframe></p>
-<h1>使用者自檢</h1>
+<p></p><h1>使用者自檢</h1>
 <h2>2019_cdb_w5</h2>
 <p><span>是否已經將 portablegit 中的 helper = manager 的設定移除?</span></p>
 <hr/>
@@ -1198,6 +1214,8 @@ doc['button'].bind('click',setgearnumber)
 <p><span><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/DzQvmA_wU7s" width="560"></iframe></span></p>
 <hr/>
 <p><span>是否了解 git 以 https 連線時, proxy 將採用那一個檔案中的設定?</span><br/><span></span></p>
+<p><span>IPv4協定</span></p>
+<p><span><img alt="" height="506" src="/images/dllhost_2019-05-14_18-04-16.png" width="400"/><img caption="false" height="512" src="/images/rundll32_2019-05-14_16-22-10.png" width="400"/><img alt="" height="512" src="/images/rundll32_2019-05-14_16-24-03.png" width="400"/></span></p>
 <hr/>
 <p><span>是否已經學會如何採用 ssh 模式維護 github 上的倉儲?</span><br/><span></span></p>
 <hr/>
