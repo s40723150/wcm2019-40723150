@@ -39,17 +39,30 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+## 40723150 期末報告
 
-### KMOLab
+### 網際內容管理
 
 <small>
-Created by [KMOLab](http://lab.kmol.info/)
+ [個人倉儲](https://github.com/s40723150/wcm2019-40723150)
 </small>
 
-[CMSimfly 網誌](./../blog/index.html)
+[個人Youtube頻道](https://www.youtube.com/channel/UCIgnhsVMxtNBl36VBLPBgxw/videos?view_as=subscriber)
 
 
+    </script>
+</section>
+
+
+						
+<<section>
+<section data-markdown>
+    <script type="text/template">
+# VirtualBox
+
+* 利用虛擬技術可在一台電腦內加設多台虛擬主機
+* 可架設不同作業系統的虛擬主機在一台電腦內
+* 電腦開啟虛擬化技術即可架設64位元的虛擬主機
     </script>
 </section>
 
@@ -57,30 +70,34 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
+# VirtualBox
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* 下載 安裝 VirtualBox
+* 新建 Ubuntu server
+* 配置一台 Ubuntu server
 
     </script>
 </section>
 
 
 						
+</section>
+
 <section>
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
+## Ubuntu 指令
+sudo apt install 程式
 
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
+sudo vi 檔案
 
-$$I = \int \rho R^{2} dV$$
+sudo netplan apply
+
+sudo /etc/init.d/nginx restart
+
+cd /etc/資料夾
+
     </script>
 </section>
 
@@ -90,32 +107,11 @@ $$I = \int \rho R^{2} dV$$
 <section data-markdown>
     <script type="text/template">
 <!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+## vi 編輯器指令
+:q!     (:q1)    離開vi編輯器
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+:wq    儲存檔案並離開vi編輯器
+
     </script>
 </section>
 
